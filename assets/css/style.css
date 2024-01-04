@@ -1,0 +1,98 @@
+@import url("http://fonts.googleapis.com/css?family=Permanent+Marker");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  color: #fff;
+  background: #6c5807;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.chrome {
+  position: relative;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 8.75rem;
+  font-style: italic;
+  line-height: 1;
+  background-image: linear-gradient(
+    #2e89ba 0%,
+    #345c63 46%,
+    #a8bc11 50%,
+    #406a08 54%,
+    #94871eca 58%,
+    #7ca73b 90%,
+    #c81b3e 100%
+  );
+}
+
+.title-pic {
+  width: 30%;
+  height: 50vh;
+  margin-top: 8rem;
+  margin-left: 16rem;
+}
+.container {
+  margin-top: 8rem;
+  padding: 1.25rem 1.25rem;
+  height: 28.125rem;
+  width: 28.125rem;
+  position: relative;
+}
+.hangman-figure {
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 0.25rem;
+}
+
+.figure-parts {
+  display: none;
+}
+
+#wrong-letters {
+  position: absolute;
+  top: 1.875rem;
+  right: 0;
+}
+
+#word {
+  display: flex;
+  position: absolute;
+  bottom: 12rem;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.letter {
+  border-bottom: 0.1875rem solid rgb(75, 146, 216);
+  font-size: 2.5rem;
+  margin: 0 0.125rem;
+  height: 2.5rem;
+  width: 1.875rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  color: #fff;
+  background-color: #3e3718;
+  padding: 10px;
+  border-radius: 5px;
+}
